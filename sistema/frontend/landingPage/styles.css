@@ -1,5 +1,5 @@
 :root {
-    --green-dark: #2f4f1f;
+    --green-dark: #5d973f;
     --green-medium: #5a7a35;
     --blue-light: #5a9cc8;
     --beige-light: #d9cbb6;
@@ -33,7 +33,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
   #logo_img {
-    height: 40px;
+    height: 85px;
   }
   #nav_menu {
     display: flex;
@@ -46,7 +46,7 @@
     padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: background 0.3s;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   #nav_menu a:hover,
   #nav_menu a:focus {

@@ -11,16 +11,13 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <!-- Substitua o src abaixo pelo endereço da sua imagem da logo -->
-        <img src="/imagens/unnamed-removebg-preview (1).png" alt="Logo EcoSapiens Tech" id="logo_img" />
+    <header>    
+        <img src="/frontend/img/logo-removebg-preview.png" alt="Logo EcoSapiens Tech" id="logo_img"/>
         <nav id="nav_menu" role="navigation" aria-label="Menu principal">
-            <a href="#hero" id="botao_inicio" tabindex="0">Início</a>
-            <a href="#lista_servicos" id="botao_produtos" tabindex="0">Produtos</a>
-            <a href="#secao_cta" id="botao_contato" tabindex="0">Contato</a>
-            <a href="#sobre" id="botao_sobre" tabindex="0">Sobre</a>
-            <a href="#login_form" id="botao_login" tabindex="0">Login</a>
-            <a href="#cadastro_form" id="botao_cadastro" tabindex="0">Cadastro</a>
+            <a href="/frontend/landingPage/index.html" id="botao_inicio" tabindex="0">Início</a>
+            <a href="/frontend/contato/contato.html" id="botao_contato" tabindex="0">Contato</a>
+            <a href="/frontend/login/login.html" id="botao_login" tabindex="0">Login</a>
+            <a href="/frontend/cadastro/cadastrar.html" id="botao_cadastro" tabindex="0">Cadastro</a>
         </nav>
     </header>
 
@@ -59,27 +56,13 @@
         <section id="secao_cta" aria-label="Chamada para ação">
             <h2>Pronto para Fazer a Diferença?</h2>
             <p>Entre em contato conosco hoje e comece sua jornada sustentável e tecnológica. Juntos, podemos criar um impacto positivo duradouro!</p>
-            <button id="botao_fale_conosco" onclick="alert('Obrigado! Entraremos em contato em breve.')">Fale Conosco</button>
+            <a href="/frontend/contato/contato.html">
+                <button id="botao_fale_conosco" class="botao_fale_conosco">Fale Conosco</button>
+              </a>
+              
         </section>
 
-        <section id="login_form" aria-labelledby="titulo_login" role="form">
-            <form>
-                <h2 id="titulo_login">Login</h2>
-                <input type="email" placeholder="Email" required id="input_email_login" />
-                <input type="password" placeholder="Senha" required id="input_senha_login" />
-                <button type="submit" class="botao_form" id="botao_login_form">Entrar</button>
-            </form>
-        </section>
-
-        <section id="cadastro_form" aria-labelledby="titulo_cadastro" role="form">
-            <form>
-                <h2 id="titulo_cadastro">Cadastro</h2>
-                <input type="text" placeholder="Nome Completo" required id="input_nome_cadastro" />
-                <input type="email" placeholder="Email" required id="input_email_cadastro" />
-                <input type="password" placeholder="Senha" required id="input_senha_cadastro" />
-                <button type="submit" class="botao_form" id="botao_cadastro_form">Cadastrar</button>
-            </form>
-        </section>
+    
     </main>
 
     <footer>
